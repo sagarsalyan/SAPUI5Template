@@ -14,9 +14,7 @@ sap.ui.define([
 		onInit: function () {
 			var oViewModel = new JSONModel({
 				busy: false,
-				delay: 0,
-				confbusy: false,
-				lineItemListTitle: this.getResourceBundle().getText("detailLineItemTableHeading")
+				delay: 0
 			});
 			this.setModel(oViewModel, "objectView");
 			var oRouter = this.getRouter();
