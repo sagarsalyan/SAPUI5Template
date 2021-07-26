@@ -1,0 +1,55 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form" controllerName="app.SAPUI5Template.controller.Object"
+	xmlns:html="http://www.w3.org/1999/xhtml" busy="{objectView>/busy}" busyIndicatorDelay="{objectView>/delay}">
+	<App>
+		<pages>
+			<Page title="Object">
+				<content>
+					<VBox class="sapUiSmallMargin">
+						<f:Form id="FormDisplay354" editable="false">
+							<f:title>
+								<core:Title text="Notification Details"/>
+							</f:title>
+							<f:layout>
+								<f:ResponsiveGridLayout labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4"
+									emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false"/>
+							</f:layout>
+							<f:formContainers>
+								<f:FormContainer>
+									<f:formElements>
+										<f:FormElement label="Notification No">
+											<f:fields>
+												<Text text="{Notificationno}"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Description">
+											<f:fields>
+												<Text text="{Notificationtxt}"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Date">
+											<f:fields>
+												<Text text="{path: 'Notifdate', type: 'sap.ui.model.type.Date', formatOptions: { pattern: 'MMM dd, yyyy' }}"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Time">
+											<f:fields>
+												<Text text="{path:'Notiftime',type:'sap.ui.model.odata.type.Time'}"/>
+											</f:fields>
+										</f:FormElement>
+									</f:formElements>
+								</f:FormContainer>
+							</f:formContainers>
+						</f:Form>
+					</VBox>
+				</content>
+				<footer>
+					<OverflowToolbar>
+						<ToolbarSpacer/>
+						<Button text="Back" press="onNavBack"/>
+					</OverflowToolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,14 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="app.SAPUI5Template.controller.Main"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Main">
+				<content>
+					<List items="{/PMNOTIF_STRUCT_HEADERDETAILSSet}" headerText="Notifications" growing="true" growingThreshold="4" growingScrollToLoad="false" mode="SingleSelectMaster" selectionChange="onNotificationSelect">
+						<StandardListItem title="{Notificationno}" description="{Personname}" iconDensityAware="false" iconInset="false"/>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
