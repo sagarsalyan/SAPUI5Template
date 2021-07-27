@@ -41,9 +41,9 @@ sap.ui.define([
 		},
 		onNotificationSelect:function(oEvent){
 			debugger
-			var notObj = oEvent.getParameter('listItem').getBindingContext().getObject();
-			var Notificationno = notObj.Notificationno;
-			this.getRouter().navTo("Object", {Notificationno}, true  );
+			var empObj = oEvent.getParameter('listItem').getBindingContext().getObject();
+			var EmployeeID = empObj.EmployeeID;
+			this.getRouter().navTo("Object", {EmployeeID}, false );
 		}
 
 		/**

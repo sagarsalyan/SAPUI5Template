@@ -3,7 +3,7 @@
 	xmlns:html="http://www.w3.org/1999/xhtml" busy="{objectView>/busy}" busyIndicatorDelay="{objectView>/delay}">
 	<App>
 		<pages>
-			<Page title="Object">
+			<Page title="Object" showNavButton="true" navButtonPress="onNavBack">
 				<content>
 					<VBox class="sapUiSmallMargin">
 						<f:Form id="FormDisplay354" editable="false">
@@ -17,19 +17,24 @@
 							<f:formContainers>
 								<f:FormContainer>
 									<f:formElements>
-										<f:FormElement label="Notification No">
+										<f:FormElement label="Employee ID">
 											<f:fields>
-												<Text text="{Notificationno}"/>
+												<Text text="{EmployeeID}"/>
 											</f:fields>
 										</f:FormElement>
-										<f:FormElement label="Description">
+										<f:FormElement label="Name">
 											<f:fields>
-												<Text text="{Notificationtxt}"/>
+												<Text text="{FirstName}"/>
 											</f:fields>
 										</f:FormElement>
-										<f:FormElement label="Date">
+										<f:FormElement label="Last Name">
 											<f:fields>
-												<Text text="{path: 'Notifdate', type: 'sap.ui.model.type.Date', formatOptions: { pattern: 'MMM dd, yyyy' }}"/>
+												<Text text="{LastName}"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Birth Date">
+											<f:fields>
+												<Text text="{path: 'BirthDate', type: 'sap.ui.model.type.Date', formatOptions: { pattern: 'MMM dd, yyyy' }}"/>
 											</f:fields>
 										</f:FormElement>
 										<f:FormElement label="Time">
@@ -43,12 +48,7 @@
 						</f:Form>
 					</VBox>
 				</content>
-				<footer>
-					<OverflowToolbar>
-						<ToolbarSpacer/>
-						<Button text="Back" press="onNavBack"/>
-					</OverflowToolbar>
-				</footer>
+				
 			</Page>
 		</pages>
 	</App>

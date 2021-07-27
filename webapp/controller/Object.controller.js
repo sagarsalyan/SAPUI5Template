@@ -26,7 +26,7 @@ sap.ui.define([
 				oParameter[value] = decodeURIComponent(oParameter[value]);
 			}
 			this.getModel().metadataLoaded().then(function () {
-				var sObjectPath = this.getModel().createKey("PMNOTIF_STRUCT_GENERALSet", oParameter);
+				var sObjectPath = this.getModel().createKey("Employees", oParameter);
 				this._bindView("/" + sObjectPath);
 			}.bind(this));
 		},

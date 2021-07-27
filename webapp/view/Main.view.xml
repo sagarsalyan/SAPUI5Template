@@ -4,8 +4,8 @@
 		<pages>
 			<Page title="Main">
 				<content>
-					<List items="{/PMNOTIF_STRUCT_HEADERDETAILSSet}" headerText="Notifications" growing="true" growingThreshold="4" growingScrollToLoad="false" mode="SingleSelectMaster" selectionChange="onNotificationSelect">
-						<StandardListItem title="{Notificationno}" description="{Personname}" iconDensityAware="false" iconInset="false"/>
+					<List items="{/Employees}" headerText="Employees" growing="true" growingThreshold="4" growingScrollToLoad="false" mode="SingleSelectMaster" selectionChange="onNotificationSelect">
+						<StandardListItem title="{EmployeeID}" description="{FirstName}" iconDensityAware="false" iconInset="false"/>
 					</List>
 				</content>
 			</Page>

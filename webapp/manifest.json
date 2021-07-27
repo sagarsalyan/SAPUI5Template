@@ -15,7 +15,7 @@
 		},
 		"dataSources": {
 			"ZPM_NOTIFICATION_SRV": {
-				"uri": "/sap/opu/odata/sap/ZPM_NOTIFICATION_SRV/",
+				"uri": "https://services.odata.org/V3/Northwind/Northwind.svc",
 				"type": "OData",
 				"settings": {
 					"localUri": "localService/metadata.xml"
@@ -111,7 +111,7 @@
 				},
 				{
 					"name": "Object",
-					"pattern": "Object/{Notificationno}",
+					"pattern": "Object/:EmployeeID:",
 					"target": [
 						"Object"
 					]
